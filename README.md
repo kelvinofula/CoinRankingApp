@@ -9,7 +9,7 @@ An iOS app that displays real-time market data for the top 100 cryptocurrencies,
 
 | Splash | Home (Top 100) | Coin Detail | Favorites |
 |--------|----------------|-------------|-----------|
-| ![Splash Screenshot]([Screenshots/splash.png](https://github.com/kelvinofula/CoinRankingApp/blob/main/Screenshots/splash.PNG)) | ![Home Screenshot]([Screenshots/home.png](https://github.com/kelvinofula/CoinRankingApp/blob/main/Screenshots/home.PNG)) | ![Detail Screenshot]([Screenshots/detail.png](https://github.com/kelvinofula/CoinRankingApp/blob/main/Screenshots/detail.PNG)) | ![Favorites Screenshot]([Screenshots/favorites.png](https://github.com/kelvinofula/CoinRankingApp/blob/main/Screenshots/favorites.PNG)) |
+| ![Splash Screenshot]([Screenshots/splash.png](Screenshots/detail.PNG)) | ![Home Screenshot]([Screenshots/home.png](Screenshots/home.PNG)) | ![Detail Screenshot]([Screenshots/detail.png]((Screenshots/favorites.PNG)) | ![Favorites Screenshot]([Screenshots/favorites.png](Screenshots/favorites.PNG)) |
 
 ---
 
