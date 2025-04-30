@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23727" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23721"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--SplashVC-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="SplashVC" id="Y6W-OH-hqX" customClass="SplashVC" customModule="CoinRanking" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MI8-90-cF2">
+                                <rect key="frame" x="96.666666666666686" y="203.33333333333337" width="200" height="200"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="9Fu-4o-jcY"/>
+                                    <constraint firstAttribute="width" constant="200" id="ZPm-ma-rJ5"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o14-HS-4AX">
+                                <rect key="frame" x="176.66666666666666" y="712" width="40" height="40"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="D2w-aO-Ejp"/>
+                                    <constraint firstAttribute="width" constant="40" id="R9q-GY-BSJ"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Internet connection" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kA1-lf-Vir">
+                                <rect key="frame" x="20" y="680.33333333333337" width="353" height="15.666666666666629"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Coin Ranking." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Ss-cR-xdc">
+                                <rect key="frame" x="103" y="409.33333333333331" width="187" height="33.666666666666686"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottomMargin" secondItem="o14-HS-4AX" secondAttribute="bottom" constant="32" id="Ccj-Xy-Arq"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="kA1-lf-Vir" secondAttribute="trailing" constant="20" id="FJE-Df-w5d"/>
+                            <constraint firstItem="o14-HS-4AX" firstAttribute="top" secondItem="kA1-lf-Vir" secondAttribute="bottom" constant="16" id="MLC-S2-FbL"/>
+                            <constraint firstItem="MI8-90-cF2" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="OTH-hK-gcG"/>
+                            <constraint firstItem="6Ss-cR-xdc" firstAttribute="top" secondItem="MI8-90-cF2" secondAttribute="bottom" constant="6" id="X5b-ny-VHV"/>
+                            <constraint firstItem="6Ss-cR-xdc" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="XS7-od-Lwm"/>
+                            <constraint firstItem="o14-HS-4AX" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="cZw-Vg-ojD"/>
+                            <constraint firstItem="kA1-lf-Vir" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="gQ7-N8-Kow"/>
+                            <constraint firstItem="6Ss-cR-xdc" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="kuG-eT-X3Q"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="animView" destination="MI8-90-cF2" id="Lkl-jv-KRb"/>
+                        <outlet property="lblName" destination="6Ss-cR-xdc" id="8dQ-ba-vUN"/>
+                        <outlet property="progressView" destination="o14-HS-4AX" id="meV-Ri-91e"/>
+                        <outlet property="textInfo" destination="kA1-lf-Vir" id="gg5-KE-I3W"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="45" y="-27"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,55 @@
+//
+//  CoinDetailsViewModel.swift
+//  CoinRanking
+//
+//  Created by Kelvin Ofula on 4/30/25.
+//
+
+import Foundation
+
+@MainActor
+final class CoinDetailsViewModel: ObservableObject {
+    @Published private(set) var isLoadingDetails = false
+    @Published private(set) var isLoadingHistory = false
+    @Published private(set) var details: CoinDetails?
+    @Published private(set) var history = [CoinHistory]()
+    @Published var errorMessage: String?
+
+    private let coin: CoinModel
+    private let service: CoinDetailsServiceProtocol
+
+    init(coin: CoinModel, service: CoinDetailsServiceProtocol = CoinDetailsService()) {
+        self.coin = coin
+        self.service = service
+    }
+
+    func fetchDetails() async {
+        isLoadingDetails = true
+
+        let results = await service.fetchDetails(for: coin.uuid)
+
+        switch results {
+        case .failure(let error):
+            errorMessage = "Failed to fetch coin details: \(error.localizedDescription)"
+        case .success(let response):
+            details = response.data.coin
+        }
+
+        isLoadingDetails = false
+    }
+
+    func fetchHistory() async {
+        isLoadingHistory = true
+
+        let results = await service.fetchHistory(for: coin.uuid)
+
+        switch results {
+        case .failure(let error):
+            errorMessage = "Failed to fetch price history: \(error.localizedDescription)"
+        case .success(let response):
+            history = response.data.history
+        }
+
+        isLoadingHistory = false
+    }
+}
