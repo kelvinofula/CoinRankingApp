@@ -9,7 +9,7 @@ An iOS app that displays real-time market data for the top 100 cryptocurrencies,
 
 | Splash | Home (Top 100) | Coin Detail | Favorites |
 |--------|----------------|-------------|-----------|
-| ![Splash Screenshot](Screenshots/splash.png) | ![Home Screenshot](Screenshots/home.png) | ![Detail Screenshot](Screenshots/detail.png) | ![Favorites Screenshot](Screenshots/favorites.png) |
+| ![Splash Screenshot](Screenshots/splash.PNG) | ![Home Screenshot](Screenshots/home.PNG) | ![Detail Screenshot](Screenshots/detail.PNG) | ![Favorites Screenshot](Screenshots/favorites.PNG) |
 
 ---
 
